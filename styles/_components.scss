@@ -1,0 +1,54 @@
+@use "./variables" as *;
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    display: none;
+    
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+
+  .aboutMe {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+    &__photo {
+        width: 175px;
+        height: 250px;                
+    }
+  }
+
+  footer {
+    display:flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100vw;
+    background-color: $color-black;
+    color: $color-white;
+    border: 2px solid green;
+     p {
+        background-color: $color-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+  }
+
+  @media  screen and (min-width: $desktop-breakpoint) {
+    nav {
+        display:block;
+    }
+    
+  }
+  
