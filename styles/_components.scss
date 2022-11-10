@@ -4,7 +4,6 @@ nav {
   width: 100vw;
   height: 10vh;
   display: none;
-  
 }
 
 .welcome {
@@ -25,25 +24,29 @@ nav {
     height: 250px;
   }
 }
+.technicalSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $text-primary;
+  border: 10px solid brown;
+}
 .portfolio {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5px;
   border: 5px solid green;
-  
+
   &__img {
     display: flex;
     border: 2px solid red;
     width: 325px;
     height: 250px;
     margin-bottom: 5px;
-  }
+ }
+}
 
-.technicalSkills {
-  font-family: $text-primary;
-}
-}
 footer {
   display: flex;
   justify-content: flex-end;
@@ -54,6 +57,7 @@ footer {
   background-color: $color-black;
   color: $color-white;
   border: 2px solid green;
+  
   p {
     background-color: $color-black;
     display: flex;
