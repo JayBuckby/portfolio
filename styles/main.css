@@ -58,6 +58,10 @@ nav {
 }
 .technicalSkills h2 {
   font-family: "Oswald", sans-serif;
+  margin-bottom: 30px;
+}
+.technicalSkills p {
+  margin-bottom: 30px;
 }
 
 .myProjects {
@@ -80,17 +84,24 @@ nav {
   height: 250px;
   margin-bottom: 5px;
 }
+.myProjects .portfolio__img--active {
+  display: none;
+}
 
 footer {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
   flex-direction: column;
-  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
   width: 100vw;
   background-color: #000000;
   color: #fff;
-  border: 2px solid green;
+  border: 10px solid green;
+}
+footer img {
+  width: 30px;
+  height: 30px;
 }
 footer p {
   background-color: #000000;

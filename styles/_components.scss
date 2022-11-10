@@ -46,6 +46,10 @@ nav {
 .technicalSkills {
   h2 {
     font-family: $text-heading;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 30px;
   }
   display: flex;
   flex-direction: column;
@@ -75,20 +79,38 @@ nav {
     width: 325px;
     height: 250px;
     margin-bottom: 5px;
- }
+    
+    &--active {
+      display:none
+       }
+    
+    
+    
+}
+
+
+ 
+ 
+
+
 }
 }
 
 footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+    display: flex;
   flex-direction: column;
-  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
   width: 100vw;
   background-color: $color-black;
   color: $color-white;
-  border: 2px solid green;
+  border: 10px solid green;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
   
   p {
     background-color: $color-black;
