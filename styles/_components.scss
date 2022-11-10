@@ -9,8 +9,21 @@ nav {
 .welcome {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.3rem;
+  border: 3px solid black;
+  font-family: $text-heading;
+  margin: 20px 20px 20px 20px;
+  h4 {
+    border: 3px solid black;
+
+  }
+  h2 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 50px;
+    border: 3px solid black;
+  }
+  
 }
 
 .aboutMe {
@@ -18,19 +31,37 @@ nav {
   flex-direction: column;
   align-items: center;
   font-family: $text-primary;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid black;
+  margin: 20px 20px 20px 20px;
 
   &__photo {
     width: 175px;
     height: 250px;
-  }
+    margin-bottom: 50px;
+    border-radius: 5%;
+      }
 }
 .technicalSkills {
+  h2 {
+    font-family: $text-heading;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: $text-primary;
+  font-weight: bold;
   border: 10px solid brown;
+  margin: 20px 20px 20px 20px;
 }
+
+.myProjects {
+  border: 2px solid yellow;
+  text-align: center;
+  margin: 20px 20px;
+  font-family: $text-heading;
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -45,6 +76,7 @@ nav {
     height: 250px;
     margin-bottom: 5px;
  }
+}
 }
 
 footer {
