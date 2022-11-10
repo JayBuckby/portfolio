@@ -15,7 +15,6 @@ nav {
   margin: 20px 20px 20px 20px;
   h4 {
     border: 3px solid black;
-
   }
   h2 {
     font-size: 4.5rem;
@@ -23,7 +22,6 @@ nav {
     margin: 50px;
     border: 3px solid black;
   }
-  
 }
 
 .aboutMe {
@@ -32,16 +30,20 @@ nav {
   align-items: center;
   font-family: $text-primary;
   font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
   border: 3px solid black;
   margin: 20px 20px 20px 20px;
+  h2 {
+    margin: 40px;
+  }
 
   &__photo {
     width: 175px;
     height: 250px;
     margin-bottom: 50px;
     border-radius: 5%;
-      }
+  }
 }
 .technicalSkills {
   h2 {
@@ -50,6 +52,7 @@ nav {
   }
   p {
     margin-bottom: 30px;
+    font-size: 1.2rem;
   }
   display: flex;
   flex-direction: column;
@@ -66,38 +69,29 @@ nav {
   margin: 20px 20px;
   font-family: $text-heading;
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5px;
-  border: 5px solid green;
-
-  &__img {
+  .portfolio {
     display: flex;
-    border: 2px solid red;
-    width: 325px;
-    height: 250px;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 5px;
-    
-    &--active {
-      display:none
-       }
-    
-    
-    
-}
+    border: 5px solid green;
 
+    &__img {
+      display: flex;
+      border: 2px solid red;
+      width: 325px;
+      height: 250px;
+      margin-bottom: 5px;
 
- 
- 
-
-
-}
+      &--mobile {
+        display: none;
+      }
+    }
+  }
 }
 
 footer {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -111,7 +105,7 @@ footer {
     width: 30px;
     height: 30px;
   }
-  
+
   p {
     background-color: $color-black;
     display: flex;

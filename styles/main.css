@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgba(66, 136, 127, 0.6980392157);
 }
 
 nav {
@@ -36,9 +36,13 @@ nav {
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
   border: 3px solid black;
   margin: 20px 20px 20px 20px;
+}
+.aboutMe h2 {
+  margin: 40px;
 }
 .aboutMe__photo {
   width: 175px;
@@ -62,6 +66,7 @@ nav {
 }
 .technicalSkills p {
   margin-bottom: 30px;
+  font-size: 1.2rem;
 }
 
 .myProjects {
@@ -84,7 +89,7 @@ nav {
   height: 250px;
   margin-bottom: 5px;
 }
-.myProjects .portfolio__img--active {
+.myProjects .portfolio__img--mobile {
   display: none;
 }
 
