@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: lightcoral;
+  background-color: #fff;
 }
 
 nav {
@@ -23,14 +23,35 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .aboutMe__photo {
   width: 175px;
   height: 250px;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 5px solid green;
+}
+.portfolio__img {
+  display: flex;
+  border: 2px solid red;
+  width: 325px;
+  height: 250px;
+  margin-bottom: 5px;
+}
+.portfolio .technicalSkills {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 footer {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   height: 10vh;
   width: 100vw;
