@@ -10,17 +10,13 @@ nav {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
-  border: 3px solid black;
   font-family: $text-heading;
   margin: 20px 20px 20px 20px;
-  h4 {
-    border: 3px solid black;
-  }
+
   h2 {
     font-size: 4.5rem;
     text-align: center;
     margin: 50px;
-    border: 3px solid black;
   }
 }
 
@@ -32,7 +28,6 @@ nav {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  border: 3px solid black;
   margin: 20px 20px 20px 20px;
   h2 {
     margin: 40px;
@@ -62,7 +57,6 @@ nav {
   align-items: center;
   font-family: $text-primary;
   font-weight: bold;
-  border: 10px solid brown;
   margin: 20px 20px 20px 20px;
 
   &__container {
@@ -100,38 +94,38 @@ nav {
     &--img9 {
       grid-area: 3 / 3/ 4 / 4;
     }
-
   }
 }
 
 .myProjects {
-  border: 2px solid yellow;
   text-align: center;
   margin: 20px 20px;
   font-family: $text-heading;
-  
 
   h2 {
     margin: 15px;
     font-size: 2rem;
   }
   h6 {
-    text-align: left;
+    margin-right: 80%;
+    font-size: 0.75rem;
+  }
+  h4 {
+    margin-right: 72.75%;
+    font-size: 1.25rem;
   }
 
   .portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5px;
-    border: 5px solid green;
+    margin-bottom: 25px;
 
     &__img {
       display: flex;
-      border: 2px solid red;
       width: 325px;
       height: 250px;
-      margin-bottom: 5px;
+      margin: 15px;
 
       &--mobile {
         display: none;
@@ -142,18 +136,17 @@ nav {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 20vh;
   width: 100vw;
   background-color: $color-black;
   color: $color-white;
-  border: 10px solid green;
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 2.5vw;
+    height: 2.5vh;
     background-color: $color-white;
   }
 

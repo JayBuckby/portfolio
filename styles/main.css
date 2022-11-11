@@ -16,18 +16,13 @@ nav {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
-  border: 3px solid black;
   font-family: "Oswald", sans-serif;
   margin: 20px 20px 20px 20px;
-}
-.welcome h4 {
-  border: 3px solid black;
 }
 .welcome h2 {
   font-size: 4.5rem;
   text-align: center;
   margin: 50px;
-  border: 3px solid black;
 }
 
 .aboutMe {
@@ -38,7 +33,6 @@ nav {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  border: 3px solid black;
   margin: 20px 20px 20px 20px;
 }
 .aboutMe h2 {
@@ -58,7 +52,6 @@ nav {
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
-  border: 10px solid brown;
   margin: 20px 20px 20px 20px;
 }
 .technicalSkills h2 {
@@ -109,7 +102,6 @@ nav {
 }
 
 .myProjects {
-  border: 2px solid yellow;
   text-align: center;
   margin: 20px 20px;
   font-family: "Oswald", sans-serif;
@@ -119,21 +111,24 @@ nav {
   font-size: 2rem;
 }
 .myProjects h6 {
-  text-align: left;
+  margin-right: 80%;
+  font-size: 0.75rem;
+}
+.myProjects h4 {
+  margin-right: 72.75%;
+  font-size: 1.25rem;
 }
 .myProjects .portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5px;
-  border: 5px solid green;
+  margin-bottom: 25px;
 }
 .myProjects .portfolio__img {
   display: flex;
-  border: 2px solid red;
   width: 325px;
   height: 250px;
-  margin-bottom: 5px;
+  margin: 15px;
 }
 .myProjects .portfolio__img--mobile {
   display: none;
@@ -141,18 +136,17 @@ nav {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 20vh;
   width: 100vw;
   background-color: #000000;
   color: #fff;
-  border: 10px solid green;
 }
 footer img {
-  width: 30px;
-  height: 30px;
+  width: 2.5vw;
+  height: 2.5vh;
   background-color: #fff;
 }
 footer p {
