@@ -162,6 +162,18 @@ footer {
   background-color: #000000;
   color: #fff;
 }
+footer div {
+  width: 60vw;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #000000;
+}
+footer div img {
+  border: solid #faf8e3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 footer p {
   background-color: #000000;
   font-size: 1.5rem;

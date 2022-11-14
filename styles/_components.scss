@@ -164,6 +164,21 @@ footer {
   width: 100vw;
   background-color: $color-black;
   color: $color-white;
+  
+  div {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-black;
+    
+    img {
+      border: solid $color-primary;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      
+    }
+  }
 
   p {
     background-color: $color-black;
