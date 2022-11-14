@@ -6,6 +6,12 @@
   background-color: #faf8e3;
 }
 
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
 nav {
   width: 100vw;
   height: 10vh;
@@ -23,6 +29,9 @@ nav {
   font-size: 4.5rem;
   text-align: center;
   margin: 50px;
+}
+.welcome img {
+  display: none;
 }
 
 .aboutMe {
@@ -188,6 +197,12 @@ footer p {
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+  }
+  nav h3 {
+    margin-left: 5vw;
   }
   nav div {
     width: 25vw;
@@ -199,6 +214,37 @@ footer p {
     width: 115px;
     height: 30px;
     border-radius: 5%;
+  }
+  .welcome {
+    margin-top: 15vh;
+  }
+  .welcome h4 {
+    padding-left: 250px;
+    font-size: 2rem;
+  }
+  .welcome .headingTextAndImage {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 250px;
+  }
+  .welcome .headingTextAndImage h2 {
+    font-size: 7rem;
+    text-align: left;
+  }
+  .welcome img {
+    display: block;
+    width: 350px;
+    height: 350px;
+  }
+  .aboutMe__imageText {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+  }
+  .technicalSkills__container {
+    display: flex;
   }
   .myProjects .portfolio__img--mobile {
     display: block;

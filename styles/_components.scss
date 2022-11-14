@@ -18,6 +18,9 @@ nav {
     text-align: center;
     margin: 50px;
   }
+  img {
+    display:none;
+  }
 }
 
 .aboutMe {
@@ -194,6 +197,13 @@ footer {
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: $text-primary;
+    font-weight: bold;
+
+    h3 {
+      margin-left: 5vw;
+    }
 
         
 
@@ -211,7 +221,60 @@ footer {
     }
   }
 
+  .welcome {
+
+    margin-top: 15vh;
+    h4 {
+     padding-left: 250px;
+     font-size: 2rem;
+    }
+    .headingTextAndImage {
+      width: 80vw;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-left: 250px;
+      h2 {
+        font-size: 7rem;
+        text-align: left;
+      }
+    }
+
+
+    img {
+      display: block;
+      width: 350px;
+      height: 350px;
+    }
+    
+  }
+
+  .aboutMe {
+    
+    &__imageText {
+      display: flex;
+      flex-direction: row;
+      width: 75vw;
+      
+
+    }
+    
+  }
+
+  .technicalSkills__container {    
+    display: flex;
+    
+
+   
+
+    
+    
+  }
+
+
   .myProjects {
+
+    
     .portfolio {
       &__img {
         &--mobile {
