@@ -127,6 +127,9 @@ nav {
   margin-right: 72.75%;
   font-size: 1.25rem;
 }
+.myProjects .desktop {
+  display: none;
+}
 .myProjects .portfolio {
   display: flex;
   flex-direction: column;
@@ -157,32 +160,16 @@ nav {
   height: 250px;
   margin: 15px;
 }
-.myProjects .portfolio__img--mobile {
-  display: none;
-}
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: 20vh;
+  height: 30vh;
   width: 100vw;
   background-color: #000000;
   color: #fff;
-}
-footer div {
-  width: 60vw;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #000000;
-}
-footer div img {
-  border: solid #faf8e3;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 1px;
 }
 footer p {
   background-color: #000000;
@@ -246,11 +233,22 @@ footer p {
   .technicalSkills__container {
     display: flex;
   }
-  .myProjects .portfolio__img--mobile {
-    display: block;
-    border: 2px solid red;
+  .myProjects .mobile {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+  }
+  .myProjects .mobile img {
     width: 250px;
     height: 250px;
-    margin-bottom: 5px;
+  }
+  .myProjects .desktop {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+  }
+  .myProjects .desktop img {
+    width: 250px;
+    height: 250px;
   }
 }/*# sourceMappingURL=main.css.map */

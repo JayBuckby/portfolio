@@ -19,7 +19,7 @@ nav {
     margin: 50px;
   }
   img {
-    display:none;
+    display: none;
   }
 }
 
@@ -117,6 +117,9 @@ nav {
     margin-right: 72.75%;
     font-size: 1.25rem;
   }
+  .desktop {
+    display: none;
+  }
 
   .portfolio {
     display: flex;
@@ -150,10 +153,6 @@ nav {
       width: 325px;
       height: 250px;
       margin: 15px;
-
-      &--mobile {
-        display: none;
-      }
     }
   }
 }
@@ -163,7 +162,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: 20vh;
+  height: 30vh;
   width: 100vw;
   background-color: $color-black;
   color: $color-white;
@@ -174,14 +173,14 @@ footer {
     justify-content: space-evenly;
     background-color: $color-black;
 
-    img {
-      border: solid $color-primary;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      padding: 1px;
-    }
-  }
+  //   img {
+  //     // border: solid $color-primary;
+  //     border-radius: 50%;
+  //     width: 40px;
+  //     height: 40px;
+  //     padding: 1.5rem;
+  //   }
+  // }
 
   p {
     background-color: $color-black;
@@ -191,6 +190,8 @@ footer {
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
+
+  
   nav {
     display: block;
     width: 100vw;
@@ -212,7 +213,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      
+
       button {
         width: 115px;
         height: 30px;
@@ -225,8 +226,8 @@ footer {
 
     margin-top: 15vh;
     h4 {
-     padding-left: 250px;
-     font-size: 2rem;
+      padding-left: 250px;
+      font-size: 2rem;
     }
     .headingTextAndImage {
       width: 80vw;
@@ -261,30 +262,37 @@ footer {
     
   }
 
-  .technicalSkills__container {    
+  .technicalSkills__container {
     display: flex;
-    
-
-   
-
-    
-    
   }
-
 
   .myProjects {
 
     
-    .portfolio {
-      &__img {
-        &--mobile {
-          display: block;
-          border: 2px solid red;
-          width: 250px;
-          height: 250px;
-          margin-bottom: 5px;
-        }
+
+    .mobile {
+
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
+      img {
+        width: 250px;
+        height: 250px;
       }
+      
+
+      }
+
+    .desktop {
+
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    img {
+      width: 250px;
+      height: 250px;
     }
+    }
+  
   }
 }
