@@ -2,17 +2,16 @@
 
 nav {
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   display: none;
 }
 
 .welcome {
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: $text-heading;
-  margin: 20px 20px 20px 20px;
-
+  margin: 20px;
   h2 {
     font-size: 4.5rem;
     text-align: center;
@@ -31,45 +30,35 @@ nav {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  margin: 20px 20px 20px 20px;
-  h2 {
-    margin: 40px;
-  }
-
-  &__photo {
+  margin: 50px;
+  img {
     width: 175px;
     height: 250px;
-    margin-bottom: 50px;
-    border-radius: 5%;
+    border-radius: 10%;
+    margin: 30px;
   }
 }
+
 .technicalSkills {
-  margin-bottom: 25px;
-  h2 {
-    font-family: $text-heading;
-    margin-bottom: 30px;
-    font-size: 2rem;
-  }
-  p {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: $text-primary;
   font-weight: bold;
-  margin: 20px 20px 20px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  h2 {
+    font-family: $text-heading;
+    margin: 25px;
+    font-size: 2rem;
+  }
 
   &__container {
+    padding: 10%;
     display: grid;
     align-items: center;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     &--img1 {
       grid-area: 1 / 1 / 2 / 2;
     }
@@ -101,100 +90,96 @@ nav {
 }
 
 .myProjects {
+  font-family: $text-primary;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 20px 20px;
-  font-family: $text-heading;
-
+  margin: 20px;
+  img {
+    width: 325px;
+    height: 250px;
+  }
   h2 {
-    margin: 15px;
+    font-family: $text-heading;
+    text-align: center;
     font-size: 2rem;
+    margin: 25px;
   }
+  h4,
   h6 {
-    margin-right: 80%;
-    font-size: 0.75rem;
+    text-align: left;
+    font-family: $text-heading;
+    margin: 5px;
   }
-  h4 {
-    margin-right: 72.75%;
-    font-size: 1.25rem;
-  }
-  .desktop {
-    display: none;
-  }
-
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-
+  .projects {
+    &--desktop {
+      display: none;
+    }
     .button {
       display: flex;
-      justify-content: space-around;
-      width: 80vw;
-      margin-top: 15px;
-
-      .button-left {
-        border-radius: 5%;
-        background-color: $color-white;
-        color: $color-black;
-        padding: 0.5rem 0.5rem;
-      }
-
-      .button-right {
-        border-radius: 5%;
-        background-color: $color-white;
-        color: $color-black;
-        padding: 0.5rem 0.5rem;
-      }
-    }
-
-    &__img {
-      display: flex;
-      width: 325px;
-      height: 250px;
+      justify-content: space-evenly;
       margin: 15px;
+      .button-left {
+        border-radius: 10%;
+        background-color: $color-white;
+        color: $color-black;
+        font-family: $text-heading;
+        font-size: 1rem;
+        padding: 10px;
+      }
+      .button-right {
+        border-radius: 10%;
+        background-color: $color-white;
+        color: $color-black;
+        font-family: $text-heading;
+        font-size: 1rem;
+        padding: 10px;
+      }
     }
   }
 }
 
 footer {
+  height: 15vh;
+  background-color: $color-black;
+  font-family: $text-heading;
+  color: $color-primary;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  height: 30vh;
-  width: 100vw;
-  background-color: $color-black;
-  color: $color-white;
-
+  justify-content: center;
   div {
-    width: 60vw;
+    background-color: $color-black;
+    width: 50vw;
     display: flex;
     justify-content: space-evenly;
-    background-color: $color-black;
-
-  //   img {
-  //     // border: solid $color-primary;
-  //     border-radius: 50%;
-  //     width: 40px;
-  //     height: 40px;
-  //     padding: 1.5rem;
-  //   }
-  // }
-
+    .git {
+      padding: 4px;
+    }
+    .linkedin {
+      padding: 4px;
+    }
+    .cv {
+      padding: 4px;
+    }
+  }
+  img {
+    width: 28px;
+    height: 28px;
+    margin: 10px;
+    background-color: $color-primary;
+    border-radius: 25%;
+  }
   p {
     background-color: $color-black;
-    font-size: 1.5rem;
-    margin: 35px;
   }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
-
-  
   nav {
     display: block;
-    width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -202,97 +187,97 @@ footer {
     font-family: $text-primary;
     font-weight: bold;
 
-    h3 {
-      margin-left: 5vw;
+    logo {
+      margin-left: 35px;
     }
-
-        
 
     div {
       width: 25vw;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-
       button {
         width: 115px;
         height: 30px;
-        border-radius: 5%;
+        border-radius: 10%;
       }
     }
   }
 
   .welcome {
-
-    margin-top: 15vh;
-    h4 {
-      padding-left: 250px;
-      font-size: 2rem;
-    }
-    .headingTextAndImage {
-      width: 80vw;
+    font-size: 2rem;
+    div {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding-left: 250px;
+      margin-bottom: 75px;
       h2 {
-        font-size: 7rem;
-        text-align: left;
+        font-size: 8rem;
+      }
+      .desktopImage {
+        display: block;
       }
     }
-
-
-    img {
-      display: block;
-      width: 350px;
-      height: 350px;
-    }
-    
   }
 
   .aboutMe {
-    
-    &__imageText {
-      display: flex;
-      flex-direction: row;
-      width: 75vw;
-      
+    display: flex;
+    font-size: 2rem;
 
+    div {
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      text-align: left;
+      img {
+        width: 350px;
+        height: 350px;
+      }
     }
-    
   }
 
-  .technicalSkills__container {
-    display: flex;
+  .technicalSkills {
+    font-size: 2rem;
+
+    .technicalSkills__container {
+      display: flex;
+      justify-content: center;
+      grid-column-gap: 50px;
+    }
   }
 
   .myProjects {
-
-    
-
-    .mobile {
-
-      display: flex;
-      flex-direction: row;
-      width: 80vw;
-      img {
-        width: 250px;
-        height: 250px;
-      }
-      
-
-      }
-
-    .desktop {
-
+    h2 {
+      margin-bottom: 50px;
+    }
     display: flex;
-    flex-direction: row;
-    width: 80vw;
-    img {
-      width: 250px;
-      height: 250px;
+    flex-direction: column;
+    .projects {
+      .projects--desktop {
+        display: block;
+      }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
+
+      .grid1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .grid2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .grid3 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+      .grid4 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .grid5 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      .grid6 {
+        grid-area: 2 / 3 / 3 / 4;
+      }
     }
-    }
-  
   }
 }
