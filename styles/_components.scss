@@ -280,4 +280,15 @@ footer {
       }
     }
   }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }

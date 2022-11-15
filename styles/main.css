@@ -280,4 +280,15 @@ footer p {
   .myProjects .projects .grid6 {
     grid-area: 2/3/3/4;
   }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  footer div {
+    display: flex;
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=main.css.map */
