@@ -120,9 +120,6 @@ nav {
       display: flex;
       justify-content: space-evenly;
       margin: 15px;
-      :hover {
-        cursor: pointer;
-      }
 
       .button-left {
         border-radius: 10%;
@@ -131,6 +128,9 @@ nav {
         font-family: $text-heading;
         font-size: 1rem;
         padding: 10px;
+        :hover {
+          cursor: pointer;
+        }
       }
       .button-right {
         border-radius: 10%;
@@ -139,6 +139,9 @@ nav {
         font-family: $text-heading;
         font-size: 1rem;
         padding: 10px;
+        :hover {
+          cursor: pointer;
+        }
       }
     }
   }
