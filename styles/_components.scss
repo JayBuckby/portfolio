@@ -251,6 +251,12 @@ footer {
     }
   }
 
+  .button {
+    :hover {
+      cursor: pointer;
+    }
+  }
+
   .myProjects {
     h2 {
       margin-bottom: 50px;
