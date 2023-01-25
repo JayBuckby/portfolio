@@ -180,9 +180,6 @@ footer {
   p {
     background-color: $color-black;
   }
-  .icons:hover {
-    cursor: pointer;
-  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
@@ -256,10 +253,6 @@ footer {
     cursor: pointer;
   }
 
-  .icons:hover {
-    cursor: pointer;
-  }
-
   .myProjects {
     h2 {
       margin-bottom: 50px;
@@ -305,6 +298,9 @@ footer {
     div {
       display: flex;
       justify-content: flex-end;
+      :hover {
+        cursor: pointer;
+      }
     }
   }
 }

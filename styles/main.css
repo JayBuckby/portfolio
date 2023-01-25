@@ -298,4 +298,7 @@ footer p {
     display: flex;
     justify-content: flex-end;
   }
+  footer div :hover {
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=main.css.map */
