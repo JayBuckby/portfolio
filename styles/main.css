@@ -149,6 +149,10 @@ nav {
   padding: 10px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 footer {
   height: 15vh;
   background-color: #000000;
@@ -244,6 +248,9 @@ footer p {
     display: flex;
     justify-content: center;
     grid-column-gap: 50px;
+  }
+  button:hover {
+    cursor: pointer;
   }
   .myProjects {
     display: flex;

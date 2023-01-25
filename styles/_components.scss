@@ -128,9 +128,6 @@ nav {
         font-family: $text-heading;
         font-size: 1rem;
         padding: 10px;
-        :hover {
-          cursor: pointer;
-        }
       }
       .button-right {
         border-radius: 10%;
@@ -139,12 +136,13 @@ nav {
         font-family: $text-heading;
         font-size: 1rem;
         padding: 10px;
-        :hover {
-          cursor: pointer;
-        }
       }
     }
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -251,10 +249,8 @@ footer {
     }
   }
 
-  .button {
-    :hover {
-      cursor: pointer;
-    }
+  button:hover {
+    cursor: pointer;
   }
 
   .myProjects {
