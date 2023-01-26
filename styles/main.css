@@ -247,7 +247,7 @@ footer p {
   .technicalSkills .technicalSkills__container {
     display: flex;
     justify-content: center;
-    grid-column-gap: 50px;
+    grid-column-gap: 75px;
   }
   button:hover {
     cursor: pointer;
